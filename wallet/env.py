@@ -23,7 +23,7 @@ class Env(EnvBase):
         self.ssl_certfile = self.required('SSL_CERTFILE')
         self.ssl_keyfile = self.required('SSL_KEYFILE')
 
-        self.rpc_port = self.integer('RPC_PORT', 8001)
+        self.rpc_port = self.integer('RPC_PORT', 8912)
 
         self.tor_proxy_host = self.default('TOR_PROXY_HOST', 'localhost')
         self.tor_proxy_port = self.integer('TOR_PROXY_PORT', None)
