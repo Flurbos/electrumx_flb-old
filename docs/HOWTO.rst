@@ -10,7 +10,7 @@ small - pull requests are welcome.
 ================ ========================
 Package          Notes
 ================ ========================
-Python3          ElectrumX uses asyncio.  Python version >= 3.6 is
+Python3          ElectrumX uses asyncio.  Python version >= 3.5.3 is
                  **required**.
 `aiohttp`_       Python library for asynchronous HTTP.  Version >=
                  1.0 required; I am using 1.0.5.
@@ -203,9 +203,9 @@ set TimeoutStopSec to *at least* 10 mins in your `.service` file.
 Installing Python 3.6 under Ubuntu
 ----------------------------------
 
-Many Ubuntu distributions have an incompatible Python version baked
-in.  Because of this, it is easier to install Python 3.6.  See
-`contrib/python3.6/python-3.6.sh`_.
+Many Ubuntu distributions have an incompatible Python version baked in.
+Because of this, it is easier to install Python 3.6 rather than attempting
+to update Python 3.5.2 to 3.5.3.  See `contrib/python3.6/python-3.6.sh`_.
 
 
 Installing on Raspberry Pi 3
@@ -318,7 +318,7 @@ Here is typical log output on startup::
   INFO:BlockProcessor:tx count: 0
   INFO:BlockProcessor:sync time so far: 0d 00h 00m 00s
   INFO:BlockProcessor:reorg limit is 200 blocks
-  INFO:Daemon:daemon at 192.168.0.2:8332/
+  INFO:Daemon:daemon at 192.168.0.2:8912/
   INFO:BlockProcessor:flushing DB cache at 1,200 MB
   INFO:Controller:RPC server listening on localhost:8000
   INFO:Prefetcher:catching up to daemon height 447,187...
